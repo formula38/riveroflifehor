@@ -1,10 +1,10 @@
-package com.riveroflifehor.webapp;
+package com.riveroflifehor.rolserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebappApplicationTests {
+class RiverOfLifeServerTests {
 
 	@Test
 	void contextLoads() {

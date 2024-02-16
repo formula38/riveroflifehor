@@ -1,13 +1,13 @@
-package com.riveroflifehor.webapp;
+package com.riveroflifehor.rolserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebappApplication {
+public class RiverOfLifeServer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebappApplication.class, args);
+		SpringApplication.run(RiverOfLifeServer.class, args);
 	}
 
 }

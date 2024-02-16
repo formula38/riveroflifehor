@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.riveroflifehor</groupId>
-	<artifactId>webapp</artifactId>
+	<artifactId>rolserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>webapp</name>
+	<name>rolserver</name>
 	<description>Official webapp of River of Life Church</description>
 	<properties>
 		<java.version>17</java.version>
