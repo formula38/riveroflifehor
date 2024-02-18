@@ -17,6 +17,11 @@ import { WatchLiveComponent } from './watch-live/watch-live.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BlogComponent } from './blog/blog.component';
+import { LogoComponent } from './logo/logo.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { GoogleMapComponent } from './google-map/google-map.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { FooterComponent } from './footer/footer.component';
     WatchLiveComponent,
     ErrorPageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent,
+    LogoComponent,
+    ContactComponent,
+    NavigationComponent,
+    GoogleMapComponent
   ],
   imports: [
     BrowserModule,

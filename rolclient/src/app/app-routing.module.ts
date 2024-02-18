@@ -10,6 +10,7 @@ import {GiveComponent} from "./give/give.component";
 import {WatchLiveComponent} from "./watch-live/watch-live.component";
 import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component";
 import {ErrorPageComponent} from "./error-page/error-page.component";
+import {BlogComponent} from "./blog/blog.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -19,8 +20,9 @@ const routes: Routes = [
   {path: 'prayer-request', component: PrayerRequestComponent},
   {path: 'services-and-location', component: ServiceInfoComponent},
   {path: 'give-popup', component: GiveComponent},
-  {path: 'give-popup', component: WatchLiveComponent},
-  {path: 'give-popup', component: PrivacyPolicyComponent},
+  {path: 'blog', component: BlogComponent},
+  {path: 'live-stream', component: WatchLiveComponent},
+  {path: 'privacy', component: PrivacyPolicyComponent},
 
   {
     path: 'not-found',
