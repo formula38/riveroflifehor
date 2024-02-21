@@ -38,7 +38,7 @@ const routes: Routes = [
   },
   {path: 'live', component: LivestreamComponent},
   {path: 'next-steps', component: NextStepsComponent},
-  {path: 'grow',
+  {path: 'connect',
     children:[
       {path: 'children', component: ChildrenComponent},
       {path: 'growtime', component: GrowTimeClassesComponent},
