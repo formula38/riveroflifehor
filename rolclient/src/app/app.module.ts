@@ -32,6 +32,7 @@ import {EventsComponent} from './events/events.component';
 import {ServeComponent} from './serve/serve.component';
 import {MemberLoginComponent} from './member-login/member-login.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     EventsComponent,
     ServeComponent,
     MemberLoginComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
