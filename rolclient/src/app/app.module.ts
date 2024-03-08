@@ -33,6 +33,7 @@ import {ServeComponent} from './serve/serve.component';
 import {MemberLoginComponent} from './member-login/member-login.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarContentComponent } from './navbar/navbar-content/navbar-content.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ServeComponent,
     MemberLoginComponent,
     ErrorPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    NavbarContentComponent
   ],
   imports: [
     BrowserModule,
