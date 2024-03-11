@@ -1,4 +1,5 @@
 <header id="sp-header" class="sticky">
+
   <div id="sp-bar">
     <div id="sp-bar-text">
       <span></span>
@@ -37,8 +38,24 @@
   <div id="sp-logo">
     <app-logo></app-logo>
   </div>
-  <div id="sp-nav">
+  <div id="sp-nav-links">
     <app-navbar></app-navbar>
   </div>
-  <div id="sp-nav-button" style="color: rgb(255, 255, 255);"></div>
+  <div id="sp-nav-button" class="navbar-toggler" style="color: rgb(255, 255, 255);">
+    <span class="navbar-toggler-icon"></span>
+  </div>
+  <!-- Include the following JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get references to the button and mobile nav elements
+      var navButton = document.getElementById("sp-nav-button");
+      var mobileNavWrapper = document.querySelector(".sp-mobile-nav-wrapper");
+
+      // Add a click event listener to the button
+      navButton.addEventListener("click", function() {
+        // Toggle the "open" class on the mobile nav wrapper
+        mobileNavWrapper.classList.toggle("open");
+      });
+    });
+  </script>
 </header>

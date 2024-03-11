@@ -1,0 +1,27 @@
+
+^
+.rolclient/src/app/events/events.component.html,f/f/ff2c32f471d5712f63f09d2e2d51246ee2617770
+Z
+*rolclient/src/app/give/give.component.html,9/8/98cd861860f9b2b22f7632f47c228fc5f1b343d7
+j
+:rolclient/src/app/member-login/member-login.component.html,6/f/6f457656b2db038e92b45f1a2ffaf82b857d1b48
+S
+#rolclient/src/app/app.component.css,3/8/385c80acf99a5acbaf3d0f2304a019ae626241f4
+]
+-rolclient/src/app/navbar/navbar.component.css,7/b/7b3e069059a92707219aa16c5c3ba9412762a84c
+f
+6rolclient/src/app/google-map/google-map.component.html,2/5/257a2fcb75e121ec3d771a24f3db3b0b62b203a2
+u
+Erolclient/src/app/navbar/navbar-content/navbar-content.component.html,5/0/50218eb8423edf85cfe0f263eba038899c097189
+O
+rolclient/src/app/app.module.ts,8/7/87cd9da24cfa7b6df01ae62ba0e0111e97488abe
+Z
+*rolclient/src/app/logo/logo.component.html,8/6/8675dfb327c200b6b568c71f11bc3fc5ef39e12a
+f
+6rolclient/src/assets/images/LOGOS/rolc-logo.png:shield,5/1/51ee4ba20f59fe81dec671ee96c466eeb2e18c0a
+o
+?rolclient/src/assets/images/LOGOS/rolc-logo.png:Zone.Identifier,2/c/2c0261b956f5b6660a049ae1bb07e4425c7f1fbf
+t
+Drolclient/src/app/navbar/navbar-content/navbar-content.component.css,f/7/f782593a28549c9f5375899feb106357922a7e1c
+s
+Crolclient/src/app/navbar/navbar-content/navbar-content.component.ts,6/d/6df3f1e08191f3efbb4111041a6355cb775f51c6

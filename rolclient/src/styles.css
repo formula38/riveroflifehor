@@ -52,3 +52,32 @@ body {
   padding: 1em 0;
   text-align: center;
 }
+
+.sp-mobile-nav-wrapper.open {
+  /* Add your styling for the open state */
+  /* For example: */
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Optional: Style adjustments for the content on top of the video */
+.sp-section-content {
+  position: relative;
+  z-index: 1;
+}
