@@ -31,9 +31,10 @@ import {YouthComponent} from './grow/youth/youth.component';
 import {EventsComponent} from './events/events.component';
 import {ServeComponent} from './serve/serve.component';
 import {MemberLoginComponent} from './member-login/member-login.component';
-import { ErrorPageComponent } from './error-page/error-page.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { NavbarContentComponent } from './navbar/navbar-content/navbar-content.component';
+import {ErrorPageComponent} from './error-page/error-page.component';
+import {NavbarComponent} from './navbar/navbar.component';
+import {NavbarContentComponent} from './navbar/navbar-content/navbar-content.component';
+import {ContactComponent} from "./about/contact/contact.component";
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { NavbarContentComponent } from './navbar/navbar-content/navbar-content.c
     GiveComponent,
     PrivacyPolicyComponent,
     HeaderComponent,
+    ContactComponent,
     FooterComponent,
     LogoComponent,
     GoogleMapComponent,
@@ -78,4 +80,5 @@ import { NavbarContentComponent } from './navbar/navbar-content/navbar-content.c
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
