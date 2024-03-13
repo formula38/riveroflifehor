@@ -1,8 +1,4 @@
 
-^
-.rolclient/src/app/events/events.component.html,f/f/ff2c32f471d5712f63f09d2e2d51246ee2617770
-Z
-*rolclient/src/app/give/give.component.html,9/8/98cd861860f9b2b22f7632f47c228fc5f1b343d7
 j
 :rolclient/src/app/member-login/member-login.component.html,6/f/6f457656b2db038e92b45f1a2ffaf82b857d1b48
 S
