@@ -7,8 +7,6 @@ S
 -rolclient/src/app/navbar/navbar.component.css,7/b/7b3e069059a92707219aa16c5c3ba9412762a84c
 f
 6rolclient/src/app/google-map/google-map.component.html,2/5/257a2fcb75e121ec3d771a24f3db3b0b62b203a2
-u
-Erolclient/src/app/navbar/navbar-content/navbar-content.component.html,5/0/50218eb8423edf85cfe0f263eba038899c097189
 Z
 *rolclient/src/app/logo/logo.component.html,8/6/8675dfb327c200b6b568c71f11bc3fc5ef39e12a
 f

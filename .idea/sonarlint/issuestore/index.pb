@@ -15,7 +15,5 @@ t
 Drolclient/src/app/navbar/navbar-content/navbar-content.component.css,f/7/f782593a28549c9f5375899feb106357922a7e1c
 f
 6rolclient/src/assets/images/LOGOS/rolc-logo.png:shield,5/1/51ee4ba20f59fe81dec671ee96c466eeb2e18c0a
-u
-Erolclient/src/app/navbar/navbar-content/navbar-content.component.html,5/0/50218eb8423edf85cfe0f263eba038899c097189
 s
 Crolclient/src/app/navbar/navbar-content/navbar-content.component.ts,6/d/6df3f1e08191f3efbb4111041a6355cb775f51c6

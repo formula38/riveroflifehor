@@ -1,158 +1,57 @@
-<!--<div class="sp-mobile-nav-wrapper">-->
-<div class="sp-nav-links">
-  <div class="sp-nav-close-button"></div>
-<!--  <div class="sp-mobile-nav">-->
-    <ul>
-      <!-- Your list items go here -->
-      <li [routerLinkActiveOptions]="{exact: true}" class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/">
-          <span></span>
-          HOME
-        </a>
-      </li>
-      <li class="nav-item" data-type="folder" routerLinkActive="active">
-        <a class="nav-link">
-          <span></span>
-          ABOUT &nbsp;<i class="fa fa-angle-down" style="font-size:12px; vertical-align:10%;"></i>
-        </a>
-        <ul class="sp-second-nav">
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/about/mission-vision">
-              <span></span>
-              MISSION + VISION
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/about/our-story">
-              <span></span>
-              OUR STORY
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/about/leadership">
-              <span></span>
-              LEADERSHIP
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/about/praise-worship">
-              <span></span>
-              PRAISE + WORSHIP
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/about/contact">
-              <span></span>
-              CONTACT
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/live">
-          <span></span>
-          LIVESTREAM
-        </a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/next-steps">
-          <span></span>
-          NEXT STEPS
-        </a>
-      </li>
-      <li class="nav-item" data-type="folder" routerLinkActive="active">
-        <a class="nav-link">
-          <span></span>
-          GROW &nbsp;<i class="fa fa-angle-down" style="font-size:12px; vertical-align:10%;"></i>
-        </a>
-        <ul class="sp-second-nav">
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/children">
-              <span></span>
-              CHILDREN
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/growtime">
-              <span></span>
-              GROW TIME CLASSES
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/marriage">
-              <span></span>
-              MARRIAGE
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/men">
-              <span></span>
-              MEN
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/military">
-              <span></span>
-              MILITARY
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/river-groups">
-              <span></span>
-              RIVER GROUPS
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/riverwise">
-              <span></span>
-              RIVER WISE 60+
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/women">
-              <span></span>
-              WOMEN
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/rolya">
-              <span></span>
-              YOUNG ADULTS
-            </a>
-          </li>
-          <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/connect/youth">
-              <span></span>
-              YOUTH
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/events">
-          <span></span>
-          EVENTS
-        </a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/give">
-          <span></span>
-          GIVE
-        </a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/serve">
-          <span></span>
-          SERVE
-        </a>
-      </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/memberlogin">
-          <span></span>
-          MEMBER LOGIN
-        </a>
-      </li>
-    </ul>
-<!--  </div>-->
-</div>
+<nav id="sp-nav-links">
+  <ul>
+    <li routerLinkActive="selected" data-type="basic" id="nav_home" style="z-index:1251">
+      <a routerLink="/" target="_self"><span></span>HOME</a>
+    </li>
+    <li data-type="folder" id="nav_about" style="z-index:1249;">
+      <a href="#" target="_self"><span></span>ABOUT&nbsp;
+        <i class="fa fa-angle-down" style="font-size:12px;vertical-align:10%;"></i>
+      </a>
+      <ul class="sp-second-nav">
+        <li id="nav_mission-vision"><a routerLink="/about/mission-vision" target="_self"><span></span>MISSION + VISION</a></li>
+        <li id="nav_our-story"><a routerLink="/about/our-story" target="_self"><span></span>OUR STORY</a></li>
+        <li id="nav_leadership"><a routerLink="/about/leadership" target="_self"><span></span>LEADERSHIP</a></li>
+        <li id="nav_bookstore"><a routerLink="/about/praise-worship" target="_self"><span></span>2460 BOOKSTORE</a></li>
+        <li id="nav_contact"><a routerLink="/about/contact" target="_self"><span></span>CONTACT</a></li>
+      </ul>
+    </li>
+    <li data-type="basic" id="nav_live" style="z-index:1248;">
+      <a routerLink="/live" target="_self"><span></span>LIVESTREAM</a>
+    </li>
+    <li data-type="basic" id="nav_next-steps" style="z-index:1247;">
+      <a routerLink="/next-steps" target="_self"><span></span>NEXT STEPS</a>
+    </li>
+    <li data-type="folder" id="nav_connect" style="z-index:1246;">
+      <a href="#" target="_self"><span></span>GROW&nbsp;
+        <i class="fa fa-angle-down" style="font-size:12px;vertical-align:10%;"></i>
+      </a>
+      <ul class="sp-second-nav">
+        <li id="nav_children"><a routerLink="/connect/children" target="_self"><span></span>CHILDREN</a></li>
+        <li id="nav_growtime"><a routerLink="/connect/growtime" target="_self"><span></span>GROW TIME CLASSES</a></li>
+        <li id="nav_marriage"><a routerLink="/connect/marriage" target="_self"><span></span>MARRIAGE</a></li>
+        <li id="nav_men"><a routerLink="/connect/men" target="_self"><span></span>MEN</a></li>
+        <li id="nav_military"><a routerLink="/connect/military" target="_self"><span></span>MILITARY</a></li>
+        <li id="nav_river-groups"><a routerLink="/connect/river-groups" target="_self"><span></span>RIVER GROUPS</a></li>
+        <li id="nav_riverwise"><a routerLink="/connect/riverwise" target="_self"><span></span>RIVER WISE 60+</a></li>
+        <li id="nav_women"><a routerLink="/connect/women" target="_self"><span></span>WOMEN</a></li>
+        <li id="nav_rolya"><a routerLink="/connect/rolya" target="_self"><span></span>YOUNG ADULTS</a></li>
+        <li id="nav_youth"><a routerLink="/connect/youth" target="_self"><span></span>YOUTH</a></li>
+      </ul>
+    </li>
+    <li data-type="basic" id="nav_events" style="z-index:1245;">
+      <a routerLink="/events" target="_self"><span></span>EVENTS</a>
+    </li>
+    <li data-type="basic" id="nav_give" style="z-index:1244;">
+      <a routerLink="/give" target="_self"><span></span>GIVE</a>
+    </li>
+    <li data-type="basic" id="nav_serve" style="z-index:1243;">
+      <a routerLink="/serve" target="_self"><span></span>SERVE</a></li>
+    <li data-type="basic" id="nav_memberlogin" style="z-index:1242;">
+      <a routerLink="/memberlogin" target="_self"><span></span>MEMBER LOGIN</a>
+    </li>
+    <li data-type="basic" id="nav_easter" style="z-index:1241;">
+      <a routerLink="/easter" target="_self"><span></span>Easter</a>
+    </li>
+  </ul>
+</nav>
 
