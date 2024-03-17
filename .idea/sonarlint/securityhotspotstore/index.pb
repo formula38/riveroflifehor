@@ -1,14 +1,10 @@
 
-j
-:rolclient/src/app/member-login/member-login.component.html,6/f/6f457656b2db038e92b45f1a2ffaf82b857d1b48
 S
 #rolclient/src/app/app.component.css,3/8/385c80acf99a5acbaf3d0f2304a019ae626241f4
 ]
 -rolclient/src/app/navbar/navbar.component.css,7/b/7b3e069059a92707219aa16c5c3ba9412762a84c
 f
 6rolclient/src/app/google-map/google-map.component.html,2/5/257a2fcb75e121ec3d771a24f3db3b0b62b203a2
-Z
-*rolclient/src/app/logo/logo.component.html,8/6/8675dfb327c200b6b568c71f11bc3fc5ef39e12a
 f
 6rolclient/src/assets/images/LOGOS/rolc-logo.png:shield,5/1/51ee4ba20f59fe81dec671ee96c466eeb2e18c0a
 o

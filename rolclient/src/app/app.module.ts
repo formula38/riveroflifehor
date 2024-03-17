@@ -35,6 +35,7 @@ import {ErrorPageComponent} from './error-page/error-page.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {NavbarContentComponent} from './navbar/navbar-content/navbar-content.component';
 import {ContactComponent} from "./about/contact/contact.component";
+import { AnnouncementBannerComponent } from './announcement-banner/announcement-banner.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import {ContactComponent} from "./about/contact/contact.component";
     MemberLoginComponent,
     ErrorPageComponent,
     NavbarComponent,
-    NavbarContentComponent
+    NavbarContentComponent,
+    AnnouncementBannerComponent
   ],
   imports: [
     BrowserModule,
