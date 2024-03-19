@@ -23,7 +23,7 @@ jobs:
 
       - name: Build
         run: ng build --prod  # Use ng build to build the Angular app in production mode
-        working-directory: ./btefrontend/src/app  # Set the working directory to the Angular project folder
+        working-directory: ./rolclient/src/app  # Set the working directory to the Angular project folder
 
       - name: Deploy to S3 Bucket
         uses: jakejarvis/s3-sync-action@master
