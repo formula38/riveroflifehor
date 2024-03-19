@@ -1,0 +1,37 @@
+name: ROL Client Build
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to match your main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: ng build --prod  # Use ng build to build the Angular app in production mode
+        working-directory: ./btefrontend/src/app  # Set the working directory to the Angular project folder
+
+      - name: Deploy to S3 Bucket
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'us-west-1'   # optional: defaults to us-east-1
+#          SOURCE_DIR: 'public'      # optional: defaults to entire repository
