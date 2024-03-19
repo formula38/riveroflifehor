@@ -21,8 +21,8 @@ jobs:
       - name: Install Angular CLI
         run: npm install -g @angular/cli
 
-      - name: Navigate to Angular project folder
-        run: cd ./rolclient/src/app
+#      - name: Navigate to Angular project folder
+#        run: cd ./rolclient/src/app
 
       - name: Install dependencies
         run: npm install
