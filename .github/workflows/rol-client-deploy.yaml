@@ -3,7 +3,7 @@ name: ROL Client Build
 on:
   push:
     branches:
-      - main  # Adjust this to match your main branch
+      - 'rolclient/src/**'  # Adjust this to match your main branch
 
 jobs:
   deploy:

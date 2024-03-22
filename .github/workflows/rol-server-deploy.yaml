@@ -3,7 +3,7 @@ name: ROL Server Build
 on:
   push:
     branches:
-      - 'src/**'
+      - 'rolserver/src/**'
 
 jobs:
   build:
