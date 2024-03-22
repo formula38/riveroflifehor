@@ -26,6 +26,10 @@ jobs:
         working-directory: rolserver
 
       - name: Install AWS CLI
+        run: sudo apt-get update && sudo apt-get install -y awscli
+        working-directory: rolserver
+
+      - name: Setup AWS Credentials
         run: |
           mkdir -p ~/.aws
           touch ~/.aws/credentials
@@ -35,7 +39,9 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        working-directory: rolserver
 
       - name: Copy files to S3
         run: aws s3 cp artifacts s3://${{ secrets.AWS_S3_BUCKET }}/${GITHUB_SHA::7}/ --recursive --region us-west-1
+        working-directory: rolserver
 

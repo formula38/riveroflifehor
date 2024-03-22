@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RiverOfLifeServer {
 
 	public static void main(String[] args) {
-		// TESTING!
+		// TESTING!!
 		SpringApplication.run(RiverOfLifeServer.class, args);
 	}
 
