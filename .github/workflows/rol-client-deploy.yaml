@@ -2,7 +2,7 @@ name: ROL Client Build
 
 on:
   push:
-    branches:
+    paths:
       - 'rolclient/src/**'  # Adjust this to match your main branch
 
 jobs:

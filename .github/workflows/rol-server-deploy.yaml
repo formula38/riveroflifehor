@@ -2,7 +2,7 @@ name: ROL Server Build
 
 on:
   push:
-    branches:
+    paths:
       - 'rolserver/src/**'
 
 jobs:
