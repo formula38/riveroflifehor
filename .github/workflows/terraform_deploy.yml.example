@@ -12,7 +12,7 @@ jobs:
     name: Deploy with terraform
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
       - uses: hashicorp/setup-terraform@v1
       - name: Set up AWS credentials
         run: |
@@ -26,14 +26,14 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.DEPLOY_AWS_SECRET_ACCESS_KEY }}
         working-directory: rolserver
 
-      - name: "intialize terraform"
+      - name: "Intialize terraform"
         run: terraform init
         working-directory: rolserver
 
-      - name: "validate terraform"
+      - name: "Validate Terraform Configuration"
         run: terraform validate -no-color
         working-directory: rolserver
 
-      - name: "Run terraform apply"
+      - name: "Apply Terraform Changes"
         run: terraform apply -auto-approve -no-color
         working-directory: rolserver
