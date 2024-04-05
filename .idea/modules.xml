@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/riveroflifehor.com.iml" filepath="$PROJECT_DIR$/.idea/riveroflifehor.com.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rolserver/riveroflifeserver.iml" filepath="$PROJECT_DIR$/rolserver/riveroflifeserver.iml" />
     </modules>
   </component>
 </project>
