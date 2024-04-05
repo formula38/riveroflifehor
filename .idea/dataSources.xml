@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="rolserverdb@localhost [2]" uuid="99f6fb4d-a996-4586-8b8c-42c03c386404">
+    <data-source source="LOCAL" name="rolserverdb@localhost" uuid="3ee9adc7-1d46-4be6-a2cc-852f9a099216">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/rolserver/src/main/resources/application.properties</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/rolserverdb</jdbc-url>
       <jdbc-additional-properties>

@@ -19,53 +19,71 @@
         <div class="sp-block sp-form-block" style="text-align:center;">
           <div class="sp-block-content" style="max-width:800px;">
             <div class="form-holder">
-              <form class="sp-form">
+              <form class="sp-form"
+                    [formGroup]="contactForm"
+                    (ngSubmit)="onSubmit()">
                 <div class="sp-fieldset">
                   <div class="sp-field-col">
-                    <label class="sp-field-label">
+                    <label class="sp-field-label" for="firstName">
                       First Name
                     </label>
                     <div class="sp-field-wrapper">
-                      <input class="sp-field" type="text"/>
+                      <input class="sp-field form-control"
+                             type="text"
+                             id="firstName"
+                             formControlName="firstName"
+                      />
                     </div>
                   </div>
                   <div class="sp-field-col">
-                    <label class="sp-field-label">
+                    <label class="sp-field-label" for="lastName">
                       Last Name
                     </label>
                     <div class="sp-field-wrapper">
-                      <input class="sp-field" type="text"/>
+                      <input class="sp-field form-control"
+                             type="text"
+                             id="lastName"
+                             formControlName="lastName"
+                      />
                     </div>
                   </div>
                 </div>
                 <div class="sp-fieldset">
                   <div class="sp-field-col">
-                    <label class="sp-field-label">
+                    <label class="sp-field-label" for="email">
                       Email
                     </label>
                     <div class="sp-field-wrapper">
-                      <input class="sp-field icon" type="text"/>
+                      <input class="sp-field icon form-control"
+                             type="text"
+                             id="email"
+                             formControlName="email"
+                      />
                       <i class="fa fa-envelope-o"></i>
                     </div>
                   </div>
                 </div>
                 <div class="sp-fieldset">
                   <div class="sp-field-col">
-                    <label class="sp-field-label">
+                    <label class="sp-field-label" for="message">
                       Message
                     </label>
                     <div class="sp-field-wrapper">
-                      <textarea class="sp-field"></textarea>
+                      <textarea class="sp-field form-control"
+                                type="text"
+                                id="message"
+                                formControlName="message"
+                      ></textarea>
                     </div>
                   </div>
                 </div>
-                <div class="button-holder" style="text-align:left;">
+                <button class="button-holder" style="text-align:left;">
                     <span class="text-reset">
-                      <a class="sp-button fill">
+                      <a class="sp-button fill" type="submit">
                         Contact Us
                       </a>
                     </span>
-                </div>
+                </button>
               </form>
             </div>
           </div>
