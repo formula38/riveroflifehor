@@ -36,6 +36,7 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {NavbarContentComponent} from './navbar/navbar-content/navbar-content.component';
 import {ContactComponent} from "./about/contact/contact.component";
 import { AnnouncementBannerComponent } from './announcement-banner/announcement-banner.component';
+import { ContactFormComponent } from './forms/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { AnnouncementBannerComponent } from './announcement-banner/announcement-
     ErrorPageComponent,
     NavbarComponent,
     NavbarContentComponent,
-    AnnouncementBannerComponent
+    AnnouncementBannerComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
