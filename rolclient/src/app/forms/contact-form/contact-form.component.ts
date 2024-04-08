@@ -14,7 +14,7 @@ export class ContactFormComponent implements OnInit{
 
   onCancel() {
     this.router.navigate(
-      ['../../'],
+      ['/thank-you'],
       {relativeTo: this.route}
     );
   }

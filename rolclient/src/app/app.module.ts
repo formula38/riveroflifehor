@@ -37,6 +37,7 @@ import {NavbarContentComponent} from './navbar/navbar-content/navbar-content.com
 import {ContactComponent} from "./about/contact/contact.component";
 import { AnnouncementBannerComponent } from './announcement-banner/announcement-banner.component';
 import { ContactFormComponent } from './forms/contact-form/contact-form.component';
+import { TyPageComponent } from './forms/ty-page/ty-page.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { ContactFormComponent } from './forms/contact-form/contact-form.componen
     NavbarComponent,
     NavbarContentComponent,
     AnnouncementBannerComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    TyPageComponent
   ],
   imports: [
     BrowserModule,

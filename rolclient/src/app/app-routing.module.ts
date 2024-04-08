@@ -24,22 +24,23 @@ import {YouthComponent} from "./grow/youth/youth.component";
 import {EventsComponent} from "./events/events.component";
 import {ServeComponent} from "./serve/serve.component";
 import {MemberLoginComponent} from "./member-login/member-login.component";
+import {TyPageComponent} from "./forms/ty-page/ty-page.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about',
-    children:[
+    children: [
       {path: 'mission-vision', component: MissionVisionComponent},
       {path: 'our-story', component: OurStoryComponent},
       {path: 'leadership', component: LeadershipComponent},
       {path: 'praise-worship', component: PraiseWorshipComponent},
-      {path: 'contact', component: ContactComponent},
+      {path: 'contact', component: ContactComponent}
     ]
   },
   {path: 'live', component: LivestreamComponent},
   {path: 'next-steps', component: NextStepsComponent},
   {path: 'connect',
-    children:[
+    children: [
       {path: 'children', component: ChildrenComponent},
       {path: 'growtime', component: GrowTimeClassesComponent},
       {path: 'marriage', component: MarriageComponent},
@@ -57,6 +58,9 @@ const routes: Routes = [
   {path: 'serve', component: ServeComponent},
   {path: 'memberlogin', component: MemberLoginComponent},
   {path: 'privacy', component: PrivacyPolicyComponent},
+
+  // Utility Pages
+  {path: 'thank-you', component: TyPageComponent},
 
   {
     path: 'not-found',
