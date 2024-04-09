@@ -25,6 +25,7 @@ import {EventsComponent} from "./events/events.component";
 import {ServeComponent} from "./serve/serve.component";
 import {MemberLoginComponent} from "./member-login/member-login.component";
 import {TyPageComponent} from "./forms/ty-page/ty-page.component";
+import {EntriesComponent} from "./forms/entries/entries.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -61,6 +62,7 @@ const routes: Routes = [
 
   // Utility Pages
   {path: 'thank-you', component: TyPageComponent},
+  {path: 'form-entries', component: EntriesComponent},
 
   {
     path: 'not-found',

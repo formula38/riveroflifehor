@@ -38,6 +38,9 @@ import {ContactComponent} from "./about/contact/contact.component";
 import { AnnouncementBannerComponent } from './announcement-banner/announcement-banner.component';
 import { ContactFormComponent } from './forms/contact-form/contact-form.component';
 import { TyPageComponent } from './forms/ty-page/ty-page.component';
+import { EntryListComponent } from './forms/entries/entry-list/entry-list.component';
+import { ListEntryComponent } from './forms/entries/entry-list/list-entry/list-entry.component';
+import { EntriesComponent } from './forms/entries/entries.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +77,10 @@ import { TyPageComponent } from './forms/ty-page/ty-page.component';
     NavbarContentComponent,
     AnnouncementBannerComponent,
     ContactFormComponent,
-    TyPageComponent
+    TyPageComponent,
+    EntryListComponent,
+    ListEntryComponent,
+    EntriesComponent
   ],
   imports: [
     BrowserModule,
