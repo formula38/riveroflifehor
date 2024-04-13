@@ -18,7 +18,6 @@ export class ContactFormComponent implements OnInit{
       {relativeTo: this.route}
     );
   }
-
   onSubmit() {
     if (this.editMode) {
       this.contactFromEntryService.updateEntry(this.contactForm.value)
@@ -33,7 +32,6 @@ export class ContactFormComponent implements OnInit{
     }
     this.onCancel();
   }
-
   private async initForm() {
     let entryId: number;
     let firstName: string;
@@ -52,7 +50,6 @@ export class ContactFormComponent implements OnInit{
       message = entry.message;
 
     }
-
     this.contactForm = new FormGroup<any>({
       entryId: new FormControl(entryId),
       firstName: new FormControl(firstName),
@@ -62,6 +59,14 @@ export class ContactFormComponent implements OnInit{
     })
   }
 
+  ngOnInit(): void {
+    this.route.params
+      .subscribe(param => {
+        this.id = param['id'];
+        this.editMode = param['id'] != null;
+        this.initForm();
+      })
+  }
   constructor(private contactFromEntryService: ContactFormEntryService,
               private route: ActivatedRoute,
               private router: Router) {
@@ -71,13 +76,5 @@ export class ContactFormComponent implements OnInit{
   id: number;
   editMode = false;
 
-  ngOnInit(): void {
-    this.route.params
-      .subscribe(param => {
-        this.id = param['id'];
-        this.editMode = param['id'] != null;
-        this.initForm();
-      })
-  }
 
 }
