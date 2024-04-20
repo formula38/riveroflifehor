@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/riveroflifehor.com.iml" filepath="$PROJECT_DIR$/.idea/riveroflifehor.com.iml" />
       <module fileurl="file://$PROJECT_DIR$/rolserver/riveroflifeserver.iml" filepath="$PROJECT_DIR$/rolserver/riveroflifeserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rolserver/rolserver.iml" filepath="$PROJECT_DIR$/rolserver/rolserver.iml" />
     </modules>
   </component>
 </project>

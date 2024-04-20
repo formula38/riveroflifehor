@@ -19,13 +19,7 @@ Prolserver/src/main/java/com/riveroflifehor/rolserver/forms/ContactFormEntry.jav
 Zrolserver/src/main/java/com/riveroflifehor/rolserver/forms/ContactFormEntryController.java,1/5/15fcb66afafb97c6230db641f2552f9c75ffc206
 `
 0rolclient/src/app/api/enviroments/environment.ts,f/5/f5cfa68726a159ef5c156dfa7e7f248fbe201646
-l
-<rolclient/src/app/api/services/contact-form-entry.service.ts,8/a/8a78459c60fd7cc17c5c41265587328c358a9e63
 o
 ?rolclient/src/app/forms/contact-form/contact-form.component.css,a/e/aebc2fbdce1d27c4e2a415b29f3ace00b4c710fc
-O
-rolclient/src/app/app.module.ts,8/7/87cd9da24cfa7b6df01ae62ba0e0111e97488abe
-f
-6rolclient/src/app/api/interfaces/contact-form-entry.ts,0/a/0ae53d425566867afb3ceb664a4904287c9c7c12
 r
 Brolclient/src/app/about/mission-vision/mission-vision.component.ts,a/b/ab803be12793d8c8559f7f12b6ba256f7f8ff383

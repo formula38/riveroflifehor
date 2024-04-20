@@ -5,10 +5,10 @@
            data-darkreader-inline-color=""
            data-type="image" style="background-position: 50% 50%; background-repeat: no-repeat; background-origin: initial; background-clip: initial; background-color: initial; background-size: cover; background-attachment: fixed; color: rgba(0, 0, 0, 0.71); left: 0%; --darkreader-inline-bgcolor: initial; --darkreader-inline-color: rgba(232, 230, 227, 0.71);">
         <div class="parallax-mirror"
-             style="visibility: visible; z-index: 0; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 48px, 0px); height: 659px; width: 1035px;">
+             style="visibility: visible; z-index: 0; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 48px, 0px); height: 100%; width: 100%;">
           <img class="parallax-slider"
                src="https://storage2.snappages.site/KHGFVV/assets/images/6214443_3024x4032_2500.png"
-               style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -408.4px; left: 0px; height: 1379px; width: 1035px; max-width: none;">
+               style="transform: translate3d(0px, 0px, 0px); position: absolute; height: 100%; width: 100%; max-width: none;">
         </div>
       </div>
     </div>
@@ -120,37 +120,13 @@
             <div class="sp-block-content">
               <div class="gallery-holder">
                 <div class="sp-image-grid" data-spacing="true">
-                  <div
-                    class="sp-image-grid-item"
-                    style="background-image:URL(https://storage2.snappages.site/KHGFVV/assets/images/6215095_3024x4032_500.png);">
-                  </div>
-
-                  <div class="sp-image-grid-item">
-                    <audio controls class="flex-fill" src=""></audio>
-
-                  </div>
-
-
-
-                  <div
-                    class="sp-image-grid-item"
-                    style="background-image:URL(https://storage2.snappages.site/KHGFVV/assets/images/6215165_4032x3024_500.png);">
-
-                  </div>
-                  <div
-                    class="sp-image-grid-item"
-                    style="background-image:URL(https://storage2.snappages.site/KHGFVV/assets/images/6215225_3024x4032_500.png);">
-
-                  </div>
-                  <div
-                    class="sp-image-grid-item"
-                    style="background-image:URL(https://storage2.snappages.site/KHGFVV/assets/images/6215095_3024x4032_500.png);">
-
-                  </div>
-                  <div
-                    class="sp-image-grid-item"
-                    style="background-image:URL(https://storage2.snappages.site/KHGFVV/assets/images/6215165_4032x3024_500.png);">
-
+                  <div class="row">
+                    <div class="col-xs-5">
+                      <app-track-list></app-track-list>
+                    </div>
+                    <div class="col-xs-7">
+                      <router-outlet></router-outlet>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -189,23 +165,23 @@
               <div class="spacer-holder" style="height:30px;"></div>
             </div>
           </div>
-          <div class="sp-block sp-heading-block" style="text-align:center;">
-            <div class="sp-block-content" style="max-width:800px;">
-              <span>
-                <h2>Questions?</h2>
-              </span>
-            </div>
-          </div>
-          <div
-            class="sp-block sp-heading-block"
-            style="text-align:center; padding-top:25px; padding-bottom:25px;"
-          >
-            <div class="sp-block-content" style="max-width:800px;">
-              <span>
-                <h3>Shoot us an email with any further questions!</h3>
-              </span>
-            </div>
-          </div>
+<!--          <div class="sp-block sp-heading-block" style="text-align:center;">-->
+<!--            <div class="sp-block-content" style="max-width:800px;">-->
+<!--              <span>-->
+<!--                <h2>Questions?</h2>-->
+<!--              </span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div-->
+<!--            class="sp-block sp-heading-block"-->
+<!--            style="text-align:center; padding-top:25px; padding-bottom:25px;"-->
+<!--          >-->
+<!--            <div class="sp-block-content" style="max-width:800px;">-->
+<!--              <span>-->
+<!--                <h3>Shoot us an email with any further questions!</h3>-->
+<!--              </span>-->
+<!--            </div>-->
+<!--          </div>-->
           <div class="sp-block sp-form-block" style="text-align:center;">
             <div class="sp-block-content">
               <div class="form-holder">
@@ -218,3 +194,13 @@
     </div>
   </section>
 </main>
+
+
+<!--<div class="row">-->
+<!--  <div class="col-xs-5">-->
+<!--    <app-track-list></app-track-list>-->
+<!--  </div>-->
+<!--  <div class="col-xs-7">-->
+<!--    <router-outlet></router-outlet>-->
+<!--  </div>-->
+<!--</div>-->

@@ -41,6 +41,10 @@ import { TyPageComponent } from './forms/ty-page/ty-page.component';
 import { EntryListComponent } from './forms/entries/entry-list/entry-list.component';
 import { ListEntryComponent } from './forms/entries/entry-list/list-entry/list-entry.component';
 import { EntriesComponent } from './forms/entries/entries.component';
+import {TrackListComponent} from "./about/praise-worship/track-list/track-list.component";
+import {TrackListEntryComponent} from "./about/praise-worship/track-list/track-list-entry/track-list-entry.component";
+import {TrackEditComponent} from "./about/praise-worship/track-edit/track-edit.component";
+import {TrackDetailsComponent} from "./about/praise-worship/track-details/track-details.component";
 
 @NgModule({
   declarations: [
@@ -80,7 +84,11 @@ import { EntriesComponent } from './forms/entries/entries.component';
     TyPageComponent,
     EntryListComponent,
     ListEntryComponent,
-    EntriesComponent
+    EntriesComponent,
+    TrackListComponent,
+    TrackListEntryComponent,
+    TrackEditComponent,
+    TrackDetailsComponent
   ],
   imports: [
     BrowserModule,
