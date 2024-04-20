@@ -14,7 +14,7 @@ public class Track implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long trackId;
 
     private String trackName;
     private String trackImageUrl;

@@ -20,7 +20,7 @@ export class TrackService {
   }
   public createNewTrackService(createTrack: ContactFormEntry): Observable<Track> {
     return this.http
-      .post<Track>(`${this.apiUrl}/v1/tracks/add`, createTrack)
+      .post<Track>(`${this.apiUrl}/v1/tracks/create`, createTrack)
   }
   public updateTrackService(trackUpdate: ContactFormEntry): Observable<Track> {
     return this.http

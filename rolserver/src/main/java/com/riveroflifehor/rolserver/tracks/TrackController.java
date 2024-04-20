@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/tracks")
+@CrossOrigin("*")
 public class TrackController {
 
     @GetMapping("/all")

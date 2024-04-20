@@ -26,6 +26,8 @@ import {ServeComponent} from "./serve/serve.component";
 import {MemberLoginComponent} from "./member-login/member-login.component";
 import {TyPageComponent} from "./forms/ty-page/ty-page.component";
 import {EntriesComponent} from "./forms/entries/entries.component";
+import {TrackEditComponent} from "./about/praise-worship/track-edit/track-edit.component";
+import {TrackDetailsComponent} from "./about/praise-worship/track-details/track-details.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -34,7 +36,12 @@ const routes: Routes = [
       {path: 'mission-vision', component: MissionVisionComponent},
       {path: 'our-story', component: OurStoryComponent},
       {path: 'leadership', component: LeadershipComponent},
-      {path: 'praise-worship', component: PraiseWorshipComponent},
+      {path: 'praise-worship', component: PraiseWorshipComponent,
+      children: [
+        {path:'new', component: TrackEditComponent},
+        {path: ':id', component: TrackDetailsComponent},
+        {path: ':id/edit', component: TrackEditComponent}
+      ]},
       {path: 'contact', component: ContactComponent}
     ]
   },
