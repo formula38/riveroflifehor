@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {PraiseWorshipComponent} from "../about/praise-worship/praise-worship.component";
 
 @Component({
   selector: 'app-header',
@@ -8,5 +7,4 @@ import {PraiseWorshipComponent} from "../about/praise-worship/praise-worship.com
 })
 export class HeaderComponent {
 
-    protected readonly PraiseWorshipComponent = PraiseWorshipComponent;
 }

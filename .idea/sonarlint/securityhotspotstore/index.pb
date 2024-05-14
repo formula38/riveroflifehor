@@ -7,10 +7,6 @@ f
 6rolclient/src/assets/images/LOGOS/rolc-logo.png:shield,5/1/51ee4ba20f59fe81dec671ee96c466eeb2e18c0a
 o
 ?rolclient/src/assets/images/LOGOS/rolc-logo.png:Zone.Identifier,2/c/2c0261b956f5b6660a049ae1bb07e4425c7f1fbf
-t
-Drolclient/src/app/navbar/navbar-content/navbar-content.component.css,f/7/f782593a28549c9f5375899feb106357922a7e1c
-s
-Crolclient/src/app/navbar/navbar-content/navbar-content.component.ts,6/d/6df3f1e08191f3efbb4111041a6355cb775f51c6
 €
 Prolserver/src/main/java/com/riveroflifehor/rolserver/forms/ContactFormEntry.java,d/5/d5524fcccc01caa4d7c552b6e355dfcdb0028b52
 Š

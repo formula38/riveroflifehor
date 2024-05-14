@@ -1,15 +1,22 @@
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #f0f0f0;
+/* Global styles */
+html, body {
+  height: 100%;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
   padding: 0;
 }
 
+/* Container styling */
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
+/* Header styles */
 .header {
   background-color: #333;
   color: #fff;
@@ -20,17 +27,13 @@ body {
   margin: 0;
 }
 
-/* Bootstrap navbar styles */
+/* Navigation bar styles */
 .navbar {
-  /*background-color: #444;*/
-}
-
-.navbar a {
   color: #fff;
   text-decoration: none;
 }
 
-/* Responsive adjustments for the navigation bar */
+/* Navigation bar responsive adjustments */
 @media only screen and (max-width: 600px) {
   .navbar-toggler {
     color: #fff;
@@ -42,10 +45,12 @@ body {
   }
 }
 
+/* Content styles */
 .main-content {
   padding: 2em 0;
 }
 
+/* Footer Styles */
 .footer {
   background-color: #333;
   color: #fff;
@@ -53,9 +58,8 @@ body {
   text-align: center;
 }
 
+/* Mobile navigation styles */
 .sp-mobile-nav-wrapper.open {
-  /* Add your styling for the open state */
-  /* For example: */
   display: block;
   position: fixed;
   top: 0;
@@ -66,7 +70,7 @@ body {
   z-index: 1000;
 }
 
-
+/* Video background styles */
 .video-background {
   position: absolute;
   top: 0;
@@ -76,23 +80,12 @@ body {
   overflow: hidden;
 }
 
-/* Optional: Style adjustments for the content on top of the video */
 .sp-section-content {
   position: relative;
   z-index: 1;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
-
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
+/* Toolbar Styles */
 .mat-toolbar {
   position: fixed;
   top: 0;
@@ -105,10 +98,12 @@ html, body {
   height: 100%;
 }
 
-.example-container {
-  margin-top: 64px; /* Adjust based on your toolbar height */
+/* Updated the name: example-container to content-container */
+.content-container {
+  margin-top: 64px;
 }
 
+/* Image grid item styles */
 .sp-image-grid-item {
   position: relative;
 }
@@ -120,7 +115,7 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-/* Media queries for responsiveness */
+/* Responsiveness */
 @media (max-width: 768px) {
   .sp-image-grid-item {
     background-size: cover;
@@ -135,4 +130,10 @@ html, body {
     margin: 0;
     padding: 0.5rem 1rem;
   }
+}
+
+
+.banner-style {
+  background-color: rgb(241, 196, 15);
+  display: flex;
 }

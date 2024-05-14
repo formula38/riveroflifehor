@@ -33,7 +33,6 @@ import {ServeComponent} from './serve/serve.component';
 import {MemberLoginComponent} from './member-login/member-login.component';
 import {ErrorPageComponent} from './error-page/error-page.component';
 import {NavbarComponent} from './navbar/navbar.component';
-import {NavbarContentComponent} from './navbar/navbar-content/navbar-content.component';
 import {ContactComponent} from "./about/contact/contact.component";
 import { AnnouncementBannerComponent } from './announcement-banner/announcement-banner.component';
 import { ContactFormComponent } from './forms/contact-form/contact-form.component';
@@ -52,6 +51,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {SocialLinkComponent} from "./social-link/social-link.component";
 
 
 @NgModule({
@@ -86,7 +86,6 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
     MemberLoginComponent,
     ErrorPageComponent,
     NavbarComponent,
-    NavbarContentComponent,
     AnnouncementBannerComponent,
     ContactFormComponent,
     TyPageComponent,
@@ -110,7 +109,8 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    NgbModule
+    NgbModule,
+    SocialLinkComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
