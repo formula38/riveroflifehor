@@ -45,6 +45,14 @@ import {TrackListComponent} from "./about/praise-worship/track-list/track-list.c
 import {TrackListEntryComponent} from "./about/praise-worship/track-list/track-list-entry/track-list-entry.component";
 import {TrackEditComponent} from "./about/praise-worship/track-edit/track-edit.component";
 import {TrackDetailsComponent} from "./about/praise-worship/track-details/track-details.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatListModule} from "@angular/material/list";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatIconModule} from "@angular/material/icon";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+
 
 @NgModule({
   declarations: [
@@ -96,6 +104,13 @@ import {TrackDetailsComponent} from "./about/praise-worship/track-details/track-
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatListModule,
+    FlexLayoutModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

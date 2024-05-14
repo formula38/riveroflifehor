@@ -1,27 +1,40 @@
-<nav id="sp-nav-links">
-  <ul>
-    <li routerLinkActive="selected" data-type="basic" id="nav_home" style="z-index:1251">
-      <a routerLink="/" target="_self"><span></span>HOME</a>
-    </li>
-    <li data-type="folder" id="nav_about" style="z-index:1249;">
-      <a href="#" target="_self"><span></span>ABOUT&nbsp;
-        <i class="fa fa-angle-down" style="font-size:12px;vertical-align:10%;"></i>
-      </a>
-      <ul class="sp-second-nav">
-        <li id="nav_mission-vision"><a routerLink="/about/mission-vision" target="_self"><span></span>MISSION + VISION</a></li>
-        <li id="nav_our-story"><a routerLink="/about/our-story" target="_self"><span></span>OUR STORY</a></li>
-        <li id="nav_leadership"><a routerLink="/about/leadership" target="_self"><span></span>LEADERSHIP</a></li>
-        <li id="nav_bookstore"><a routerLink="/about/praise-worship" target="_self"><span></span>PRAISE + WORSHIP</a></li>
-        <li id="nav_contact"><a routerLink="/about/contact" target="_self"><span></span>CONTACT</a></li>
-      </ul>
-    </li>
-    <li data-type="basic" id="nav_live" style="z-index:1248;">
-      <a routerLink="/live" target="_self"><span></span>WATCH LIVE!</a>
-    </li>
+<!-- navbar.component.html -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">River of Life</a>
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div [ngbCollapse]="isCollapsed" class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/live">Livestream</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/give">Give</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/connect">Connect</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/events">Events</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/serve">Serve</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/memberlogin">Member Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 
 
-    <!-- LATER FEATURE PAGES -->
+
+<!-- LATER FEATURE PAGES -->
 
 
 
@@ -59,6 +72,6 @@
 <!--    <li data-type="basic" id="nav_easter" style="z-index:1241;">-->
 <!--      <a routerLink="/easter" target="_self"><span></span>Easter</a>-->
 <!--    </li>-->
-  </ul>
-</nav>
+<!--  </ul>-->
+<!--</nav>-->
 

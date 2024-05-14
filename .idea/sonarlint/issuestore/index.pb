@@ -1,8 +1,6 @@
 
 S
 #rolclient/src/app/app.component.css,3/8/385c80acf99a5acbaf3d0f2304a019ae626241f4
-]
--rolclient/src/app/navbar/navbar.component.css,7/b/7b3e069059a92707219aa16c5c3ba9412762a84c
 f
 6rolclient/src/app/google-map/google-map.component.html,2/5/257a2fcb75e121ec3d771a24f3db3b0b62b203a2
 o

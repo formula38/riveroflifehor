@@ -81,3 +81,58 @@ body {
   position: relative;
   z-index: 1;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.mat-sidenav-container {
+  height: 100%;
+}
+
+.example-container {
+  margin-top: 64px; /* Adjust based on your toolbar height */
+}
+
+.sp-image-grid-item {
+  position: relative;
+}
+
+.sp-image-grid-item audio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .sp-image-grid-item {
+    background-size: cover;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-item {
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+}
