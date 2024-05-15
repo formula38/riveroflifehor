@@ -15,7 +15,10 @@
           </div>
           <div class="sp-block sp-text-block sp-animate slideInUp" fxLayout="column" fxLayoutAlign="center center">
             <div class="sp-block-content max-width-460">
-              River of Life Church House of Restoration is located in Sacramento the State Capital of California. We are a new church plant designed with You in mind! We are a compassionate caring ministry that wants to see lives changed by the power of the Gospel of our Lord and savior Jesus the Christ. The worship experience is approximately less than two hours in length, so you’ll have the remainder of your day to enjoy!
+              River of Life Church House of Restoration is located in Sacramento the State Capital of California. We are
+              a new church plant designed with You in mind! We are a compassionate caring ministry that wants to see
+              lives changed by the power of the Gospel of our Lord and savior Jesus the Christ. The worship experience
+              is approximately less than two hours in length, so you’ll have the remainder of your day to enjoy!
             </div>
           </div>
           <div class="sp-block sp-button-block" fxLayout="column" fxLayoutAlign="center center">
@@ -30,8 +33,12 @@
 
   <section class="sp-section sp-scheme-1" id="home-watch_latest_message">
     <div class="sp-section-backgrounds">
-      <div class="sp-section-background" style="color: rgba(0, 0, 0, 0.09); width: 100%;">
-        <iframe style="width: 100%; height: 100vh; border: 0; position: relative;" src="https://www.youtube.com/embed/0hh2NhqC-9E?si=GqSG6RLw2JBNRSDu&amp;controls=0&amp;start=145;&amp;autoplay=1&amp;loop=1&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="sp-section-background" style="color: rgba(0, 0, 0, 0.09); left: 0%; width: 100%;">
+        <iframe style="width: 100%; height: 100vh; border: 0; position: relative;"
+                src="https://www.youtube.com/embed/0hh2NhqC-9E?si=GqSG6RLw2JBNRSDu&amp;controls=0&amp;start=145;&amp;autoplay=1&amp;loop=1&amp;mute=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
       </div>
     </div>
     <div class="sp-section-slide">
@@ -53,7 +60,9 @@
             <div class="sp-col sp-col-12">
               <div class="sp-block sp-button-block">
                 <div class="sp-block-content">
-                  <a class="sp-button" href="https://www.youtube.com/channel/UC-iNqiJoUGqtfLvjI8-n23g?sub_confirmation=1" target="_blank">More on Youtube</a>
+                  <a class="sp-button"
+                     href="https://www.youtube.com/channel/UC-iNqiJoUGqtfLvjI8-n23g?sub_confirmation=1" target="_blank">More
+                    on Youtube</a>
                 </div>
               </div>
             </div>
@@ -81,26 +90,20 @@
                     <div *ngSwitchCase="'heading'" [innerHTML]="block.blockContent"></div>
                     <div *ngSwitchCase="'text'" [innerHTML]="block.blockContent"></div>
                     <div *ngSwitchCase="'button'" [innerHTML]="block.blockContent"></div>
+                    <div *ngSwitchCase="'image'" [innerHTML]="block.blockContent"></div>
                   </ng-container>
                 </div>
               </ng-container>
-            </div>
-            <div class="sp-col sp-col-12">
-              <div class="sp-image-block">
-                <div class="sp-image-holder">
-                  <img src="assets/images/_oldsite/HOME/bishop_clifton_edwards_jr-first_lady_tracie_edwards.png" alt="" class="fill">
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <section class="sp-section sp-scheme-3" id="home-service_info">
     <div class="sp-section-backgrounds">
-      <div class="sp-section-background" style="background: url(assets/images/BACKGROUDS/purple_motion_blurr.jpeg) 50% 50% / cover no-repeat scroll; color: rgba(0, 0, 0, 0.29);"></div>
+      <div class="sp-section-background"
+           style="background: url(assets/images/BACKGROUDS/purple_motion_blurr.jpeg) 50% 50% / cover no-repeat scroll; color: rgba(0, 0, 0, 0.29); left: 0%; --darkreader-inline-bgcolor: initial; --darkreader-inline-color: rgba(232, 230, 227, 0.29);"></div>
     </div>
     <div class="sp-section-slide">
       <div class="sp-section-content">
@@ -141,7 +144,8 @@
               </div>
               <div class="sp-block sp-text-block" fxLayout="column" fxLayoutAlign="center center">
                 <div class="sp-block-content">
-                  6:00 p.m. (<a href="https://www.facebook.com/clifton.edwardsj" target="_blank">online only for Renewal Service</a>)
+                  6:00 p.m. (<a href="https://www.facebook.com/clifton.edwardsj" target="_blank">online only for Renewal
+                  Service</a>)
                   <br>
                   See our "Grow Time" tab for more info
                   <br>
@@ -155,13 +159,11 @@
               <div class="spacer-holder" style="height:20px;"></div>
             </div>
           </div>
-
           <div class="sp-block-content">
-            <div class="map-holder" style="height:520px;">
+            <div class="map-holder" style="height:520px; width: 100%;">
               <app-google-map></app-google-map>
             </div>
           </div>
-
         </div>
       </div>
     </div>

@@ -188,6 +188,13 @@ button:hover, .sp-button:hover {
 }
 
 /* Image Holder */
+.sp-image-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .sp-image-holder img {
   width: 100%;
   height: auto;
@@ -197,4 +204,19 @@ button:hover, .sp-button:hover {
 /* Additional styles for text alignment */
 .sp-block-content {
   text-align: center;
+}
+
+/* styles.css */
+.responsive-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+  .map-holder {
+    height: 300px;
+  }
 }

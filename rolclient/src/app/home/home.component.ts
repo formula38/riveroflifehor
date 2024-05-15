@@ -10,7 +10,11 @@ export class HomeComponent implements OnInit {
   blocks: Block[] = [];
 
   ngOnInit() {
-    this.blocks = [
+    this.blocks = this.getBlocks();
+  }
+
+  getBlocks(): Block[] {
+    return [
       {
         blockClass: "sp-spacer-block sp-hide-tablet sp-hide-mobile",
         blockType: "spacer",
@@ -24,7 +28,16 @@ export class HomeComponent implements OnInit {
       {
         blockClass: "sp-text-block",
         blockType: "text",
-        blockContent: "Bishop Clifton Edwards Jr. and First Lady Tracie Edwards have provided faithful and consistent leadership to River of Life Church and the Sacramento, CA community since 2019.",
+        blockContent: "Bishop Clifton Edwards Jr. and First Lady Tracie Edwards have provided faithful and consistent leadership to River of Life Church and the Sacramento, CA community since 2019." +
+          "<br><br>",
+      },
+      {
+        blockClass: "sp-image-block",
+        blockType: "image",
+        blockContent: "<img " +
+          "src='assets/images/_oldsite/HOME/bishop_clifton_edwards_jr-first_lady_tracie_edwards.png' " +
+          "alt='Bishop Clifton Edwards Jr. and First Lady Tracie Edwards' " +
+          "class='responsive-image' />",
       },
       {
         blockClass: "sp-button-block",
