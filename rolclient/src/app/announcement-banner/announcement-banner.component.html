@@ -1,5 +1,12 @@
 <div id="announcement-banner" class="banner-style">
-  <div class="announcement-content" [innerHTML]="remainingTime"></div>
-  <div class="close-button"><i class="fa fa-times"></i></div>
+  <div class="announcement-content">
+    <span>
+      Join us for our Sunday Church Service live stream in {{ remainingTime }}!
+    </span>
+  </div>
+  <div class="close-button" (click)="closeBanner()"><i class="fa fa-times"></i></div>
 </div>
+
+
+
 

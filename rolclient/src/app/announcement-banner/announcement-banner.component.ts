@@ -26,7 +26,7 @@ export class AnnouncementBannerComponent implements OnInit, OnDestroy {
     const timeDifference = nextSunday9am.getTime() - now.getTime();
 
     if (timeDifference <= 0) {
-      this.remainingTime = 'Tune in now to watch live! - <a href="/live">Click here</a>';
+      this.remainingTime = 'Tune in now to watch live! - <a href="/live" style="color: yellow;">Click here</a>';
       setTimeout(() => {
         this.startCountdown();
       }, 60 * 60 * 1000); // 1 hour in milliseconds
@@ -37,7 +37,7 @@ export class AnnouncementBannerComponent implements OnInit, OnDestroy {
 
   getNextSunday9am(now: Date): Date {
     const nextSunday = new Date(now);
-    nextSunday.setDate(now.getDate() + (7 - now.getDay()) % 7);
+    nextSunday.setDate(now.getDate() + ((7 - now.getDay()) % 7));
     nextSunday.setHours(9, 0, 0, 0); // 9 AM
     return nextSunday;
   }
@@ -47,9 +47,14 @@ export class AnnouncementBannerComponent implements OnInit, OnDestroy {
   }
 
   formatTimeDifference(diff: number): string {
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-    return `${hours}h ${minutes}m ${seconds}s`;
+    return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  closeBanner() {
+    document.getElementById('announcement-banner')!.style.display = 'none';
   }
 }
