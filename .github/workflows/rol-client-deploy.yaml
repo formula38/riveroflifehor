@@ -22,7 +22,7 @@ jobs:
         run: npm install -g @angular/cli
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --force
         working-directory: rolclient
 
       - name: Build
