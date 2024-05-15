@@ -1,139 +1,199 @@
-/* Global styles */
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+/* ---------- Define primary colors ---------- */
+:root {
+  --primary-burgundy: #800020;
+  --primary-pink: #FFC0CB;
+  --primary-blue: #4682B4;
+  --primary-gray: #808080;
+  --background-light: #F8F9FA;
+  --text-dark: #343A40;
 }
 
+/* ---------- General Styles ----------- */
 body {
-  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+  margin: 0;
   padding: 0;
 }
 
-/* Container styling */
-.container {
-  width: 80%;
-  margin: 0 auto;
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
-/* Header styles */
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em 0;
-}
-
-.header h1 {
-  margin: 0;
-}
-
-/* Navigation bar styles */
-.navbar {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Navigation bar responsive adjustments */
-@media only screen and (max-width: 600px) {
-  .navbar-toggler {
-    color: #fff;
-    border-color: #fff;
-  }
-
-  .navbar-collapse {
-    background-color: #444;
-  }
-}
-
-/* Content styles */
-.main-content {
-  padding: 2em 0;
-}
-
-/* Footer Styles */
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1em 0;
+/* ---------- Headers ---------- */
+header {
+  background-color: var(--primary-burgundy);
+  color: white;
+  padding: 10px 0;
   text-align: center;
 }
 
-/* Mobile navigation styles */
-.sp-mobile-nav-wrapper.open {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
+header h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
-/* Video background styles */
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
+.sp-section h1, .sp-section h2, .sp-section h3 {
+  color: var(--primary-burgundy);
+  text-align: center;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: var(--primary-gray);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: var(--primary-gray);
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  background-color: var(--primary-pink);
+  color: var(--text-dark);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--primary-gray);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ---------- Buttons ---------- */
+button, .sp-button {
+  background-color: var(--primary-pink);
+  color: var(--text-dark);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 10px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, .sp-button:hover {
+  background-color: var(--primary-burgundy);
+  color: white;
+}
+
+/* ---------- Sections ---------- */
+.sp-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sp-section-background iframe {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: calc(100vh - 80px); /* Adjust height to ensure full screen */
+  border: 0;
 }
 
-.sp-section-content {
-  position: relative;
-  z-index: 1;
+.sp-grid, .sp-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Toolbar Styles */
-.mat-toolbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+.sp-col {
+  flex: 1;
+  padding: 10px;
+  max-width: 100%;
 }
 
-.mat-sidenav-container {
-  height: 100%;
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Updated the name: example-container to content-container */
-.content-container {
-  margin-top: 64px;
+/* ---------- Image Handling ---------- */
+.sp-image-holder img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
-/* Image grid item styles */
-.sp-image-grid-item {
-  position: relative;
-}
-
-.sp-image-grid-item audio {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Responsiveness */
+/* ---------- Mobile Styles ---------- */
 @media (max-width: 768px) {
-  .sp-image-grid-item {
-    background-size: cover;
-  }
-
-  .navbar {
+  .sp-row, .sp-col {
     flex-direction: column;
     align-items: center;
   }
 
-  .navbar .nav-item {
-    margin: 0;
-    padding: 0.5rem 1rem;
+  .sp-section h1, .sp-section h2, .sp-section h3 {
+    text-align: center;
   }
 }
 
-
-.banner-style {
-  background-color: rgb(241, 196, 15);
+/* ---------- Header Styles ---------- */
+#sp-header {
+  background-color: var(--primary-burgundy);
+  color: white;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#sp-bar {
+  width: 100%;
+  background-color: var(--primary-blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+#sp-bar-text {
+  flex: 1;
+}
+
+.sp-social-holder {
+  display: flex;
+  gap: 10px;
+}
+
+.sp-social-holder a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+#sp-logo {
+  margin: 20px 0;
+}
+
+#sp-nav {
+  width: 100%;
 }
