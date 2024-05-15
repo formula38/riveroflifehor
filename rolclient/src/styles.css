@@ -37,7 +37,6 @@ header h1 {
 
 .sp-section h1, .sp-section h2, .sp-section h3 {
   color: var(--primary-burgundy);
-  text-align: center;
 }
 
 /* ---------- Navbar ---------- */
@@ -45,7 +44,9 @@ header h1 {
   background-color: var(--primary-blue);
   color: white;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar a {
@@ -58,11 +59,7 @@ header h1 {
   background-color: var(--primary-gray);
 }
 
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-}
-
+/* Additional Navbar Styles */
 .navbar-nav .nav-link {
   color: white;
   padding: 10px 15px;
@@ -112,9 +109,10 @@ button:hover, .sp-button:hover {
   text-align: center;
 }
 
+/* ---------- Responsive Content ---------- */
 .sp-section-background iframe {
   width: 100%;
-  height: calc(100vh - 80px); /* Adjust height to ensure full screen */
+  height: 100vh;
   border: 0;
 }
 
@@ -122,13 +120,11 @@ button:hover, .sp-button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .sp-col {
   flex: 1;
   padding: 10px;
-  max-width: 100%;
 }
 
 .center-content {
@@ -136,13 +132,6 @@ button:hover, .sp-button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-/* ---------- Image Handling ---------- */
-.sp-image-holder img {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
 /* ---------- Mobile Styles ---------- */
@@ -196,4 +185,16 @@ button:hover, .sp-button:hover {
 
 #sp-nav {
   width: 100%;
+}
+
+/* Image Holder */
+.sp-image-holder img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Additional styles for text alignment */
+.sp-block-content {
+  text-align: center;
 }
